@@ -1,0 +1,30 @@
+﻿Build started 13.05.2017 17:50:32.
+     1>Project "D:\GMHax\gmcl_samurai_win32\gmcl_samurai_win32.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\gmcl_samurai_win32.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt samurai.cpp
+         samurai.cpp
+     1>samurai.cpp(105): warning C4018: <: несоответствие типов со знаком и без знака
+     1>samurai.cpp(119): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(110): см. объявление "strcat"
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GMHax\Release\gmcl_samurai_win32.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\gmcl_samurai_win32.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\GMHax\Release\gmcl_samurai_win32.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GMHax\Release\gmcl_samurai_win32.lib" /MACHINE:X86 /DLL Release\main.obj
+         Release\memobj.obj
+         Release\samurai.obj
+         Release\state.obj
+         Release\struct.obj
+            Создается библиотека D:\GMHax\Release\gmcl_samurai_win32.lib и объект D:\GMHax\Release\gmcl_samurai_win32.exp
+         Создание кода
+         Создание кода завершено
+         gmcl_samurai_win32.vcxproj -> D:\GMHax\Release\gmcl_samurai_win32.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\GMHax\Release\gmcl_samurai_win32.dll;#2" /manifest Release\gmcl_samurai_win32.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\gmcl_samurai_win32.unsuccessfulbuild".
+         Touching "Release\gmcl_samurai_win32.lastbuildstate".
+     1>Done Building Project "D:\GMHax\gmcl_samurai_win32\gmcl_samurai_win32.vcxproj" (build target(s)).
+
+Построение успешно завершено.
+
+Time Elapsed 00:00:06.66
