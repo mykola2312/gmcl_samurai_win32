@@ -151,6 +151,16 @@ int lStruct_GetString(CLuaState* L)
 	return 1;
 }
 
+int lStruct_GetStringFromPtr(CLuaState* L)
+{
+	struct_t* stc = Check_Struct(L,1);
+
+	L->PushString(stc->s_ptr);
+	stc->s_ptr = (char*)(stc->s_ptr+4);
+
+	return 1;
+}
+
 int lStruct_GetNumber(CLuaState* L)
 {
 	L->CheckType(2,NUMBER);
@@ -216,6 +226,9 @@ int Struct_Open(CLuaState* L)
 
 	L->PushCFunction(lStruct_PushNumber);
 	L->SetField(-2,"PushNumber");
+
+	L->PushCFunction(lStruct_GetStringFromPtr);
+	L->SetField(-2,"GetStringFromPtr");
 
 	L->PushCFunction(lStruct_GetStringFixed);
 	L->SetField(-2,"GetStringFixed");
